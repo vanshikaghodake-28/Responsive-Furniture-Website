@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Padding Example</title>
+    <style>
+        .container {
+            height: 200px; /* Fixed height for scrollable area */
+            overflow-y: auto;
+            border: 1px solid black;
+            scroll-padding-top: 50px; /* Space from the top when scrolling to an element */
+        }
+
+        .content {
+            height: 800px; /* Tall content to make scrolling necessary */
+            background-color: aquamarine;
+        }
+
+        .target {
+            margin-top: 300px; /* Place target element further down */
+            font-size: 24px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="target">Scroll to me!</div>
+        </div>
+    </div>
+</body>
+</html>
